@@ -21,9 +21,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="VDx-Jl-hDN" appends="YES" id="mHl-ip-Nb5"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -40,11 +37,6 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQp-Yv-sJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="VDx-Jl-hDN">
-                    <connections>
-                        <action selector="swipedCell:" destination="9Xd-38-dvc" id="vUG-RZ-bsd"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2231" y="464"/>
         </scene>
