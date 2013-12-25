@@ -111,10 +111,10 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
         BWItem *itemToRemove = self.items[indexPath.row];
         [[[BWDBManager alloc] init] remove:itemToRemove.index];
         [self.items removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     }
 }
 
