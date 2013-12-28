@@ -51,6 +51,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     if (self.items == nil) self.items = [[NSMutableArray alloc] init];
+    self.filteredItems = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,19 +69,45 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.items count];
+    if ( tableView == self.searchDisplayController.searchResultsTableView) {
+        return [self.filteredItems count];
+    } else {
+        return [self.items count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"MyCellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyCellIdentifier"];
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    }
     // Configure the cell...
-    BWItem *item = [self.items objectAtIndex:indexPath.row];
-    cell.textLabel.text = item.itemName;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [[self.filteredItems objectAtIndex:indexPath.row] itemName];
+    } else {
+        cell.textLabel.text = [[self.items objectAtIndex:indexPath.row ] itemName];
+    }
     
     return cell;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:
+      [self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    return YES;
+}
+
+- (void)filterContentForSearchText:(NSString *)searchText scope:(NSString *)scope
+{
+    [self.filteredItems removeAllObjects];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.itemName contains[c] %@", searchText];
+    self.filteredItems = [NSMutableArray arrayWithArray:[self.items filteredArrayUsingPredicate:predicate]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

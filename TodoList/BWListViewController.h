@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BWItem.h"
 
-@interface BWListViewController : UITableViewController
+@interface BWListViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property NSMutableArray *items;
+@property NSMutableArray *filteredItems;
 @property BWItem *itemToSave;
 
 @end

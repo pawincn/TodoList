@@ -81,7 +81,7 @@ static sqlite3_stmt *statement = nil;
     const char *dp = [dbPath UTF8String];
     if (sqlite3_open(dp, &connection) == SQLITE_OK)
     {
-        NSString *sql = [NSString stringWithFormat:@"update todos set name = \"%@\" where regno = \"%d\"",name, id];
+        NSString *sql = [NSString stringWithFormat:@"update todos set name = \"%@\" where regno = %d",name, id];
         const char *sql_stmt = [sql UTF8String];
         sqlite3_prepare_v2(connection, sql_stmt, -1, &statement, NULL);
         return sqlite3_step(statement) == SQLITE_DONE;
@@ -95,7 +95,7 @@ static sqlite3_stmt *statement = nil;
     const char *dp = [dbPath UTF8String];
     if (sqlite3_open(dp, &connection) == SQLITE_OK)
     {
-        NSString *sql = [NSString stringWithFormat:@"delete from todos where regno = \"%d\"", id];
+        NSString *sql = [NSString stringWithFormat:@"delete from todos where regno = %d", id];
         const char *sql_stmt = [sql UTF8String];
         sqlite3_prepare_v2(connection, sql_stmt, -1, &statement, NULL);
         return sqlite3_step(statement) == SQLITE_DONE;
