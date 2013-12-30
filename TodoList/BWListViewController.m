@@ -52,6 +52,8 @@
     
     if (self.items == nil) self.items = [[NSMutableArray alloc] init];
     self.filteredItems = [[NSMutableArray alloc] init];
+    // Left edit button
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -134,15 +136,32 @@
     self.tappedItem = nil; // this clearing is necessary, otherwise the Add button won't work.
 }
 
-- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         BWItem *itemToRemove = self.items[indexPath.row];
-        [[[BWDBManager alloc] init] remove:itemToRemove.index];
+        [[BWDBManager getSharedInstance] remove:itemToRemove.index];
         [self.items removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     }
 }
+
+/*- (void)setEditing:(BOOL)editing animated:(BOOL)animated
+{
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+    if (editing) {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    }
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}*/
+
 
 @end
