@@ -19,7 +19,7 @@
 		25791D70185ADB9F00A10918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25791D55185ADB9F00A10918 /* Foundation.framework */; };
 		25791D71185ADB9F00A10918 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25791D59185ADB9F00A10918 /* UIKit.framework */; };
 		25791D79185ADB9F00A10918 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25791D77185ADB9F00A10918 /* InfoPlist.strings */; };
-		25791D7B185ADB9F00A10918 /* TodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25791D7A185ADB9F00A10918 /* TodoListTests.m */; };
+		25791D7B185ADB9F00A10918 /* JoinmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25791D7A185ADB9F00A10918 /* JoinmeTests.m */; };
 		25791D85185ADBAD00A10918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25791D84185ADBAD00A10918 /* Main.storyboard */; };
 		25791D88185AE5A100A10918 /* BWListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25791D87185AE5A100A10918 /* BWListViewController.m */; };
 		25791D8B185AE5D500A10918 /* BWAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25791D8A185AE5D500A10918 /* BWAddViewController.m */; };
@@ -55,7 +55,7 @@
 		25791D6E185ADB9F00A10918 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		25791D76185ADB9F00A10918 /* joinmeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "joinmeTests-Info.plist"; sourceTree = "<group>"; };
 		25791D78185ADB9F00A10918 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		25791D7A185ADB9F00A10918 /* TodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListTests.m; sourceTree = "<group>"; };
+		25791D7A185ADB9F00A10918 /* JoinmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoinmeTests.m; sourceTree = "<group>"; };
 		25791D84185ADBAD00A10918 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		25791D86185AE5A100A10918 /* BWListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWListViewController.h; sourceTree = "<group>"; };
 		25791D87185AE5A100A10918 /* BWListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWListViewController.m; sourceTree = "<group>"; };
@@ -141,8 +141,7 @@
 				25791D67185ADB9F00A10918 /* Images.xcassets */,
 				25791D5C185ADB9F00A10918 /* Supporting Files */,
 			);
-			name = joinme;
-			path = TodoList;
+			path = joinme;
 			sourceTree = "<group>";
 		};
 		25791D5C185ADB9F00A10918 /* Supporting Files */ = {
@@ -159,11 +158,10 @@
 		25791D74185ADB9F00A10918 /* joinmeTests */ = {
 			isa = PBXGroup;
 			children = (
-				25791D7A185ADB9F00A10918 /* TodoListTests.m */,
+				25791D7A185ADB9F00A10918 /* JoinmeTests.m */,
 				25791D75185ADB9F00A10918 /* Supporting Files */,
 			);
-			name = joinmeTests;
-			path = TodoListTests;
+			path = joinmeTests;
 			sourceTree = "<group>";
 		};
 		25791D75185ADB9F00A10918 /* Supporting Files */ = {
@@ -220,7 +218,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BW;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = bwang;
 				TargetAttributes = {
 					25791D6C185ADB9F00A10918 = {
@@ -285,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25791D7B185ADB9F00A10918 /* TodoListTests.m in Sources */,
+				25791D7B185ADB9F00A10918 /* JoinmeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +321,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -362,7 +359,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -397,8 +393,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/joinme-Prefix.pch";
-				INFOPLIST_FILE = "TodoList/joinme-Info.plist";
+				GCC_PREFIX_HEADER = "joinme/joinme-Prefix.pch";
+				INFOPLIST_FILE = "joinme/joinme-Info.plist";
 				PRODUCT_NAME = joinme;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -411,8 +407,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/joinme-Prefix.pch";
-				INFOPLIST_FILE = "TodoList/joinme-Info.plist";
+				GCC_PREFIX_HEADER = "joinme/joinme-Prefix.pch";
+				INFOPLIST_FILE = "joinme/joinme-Info.plist";
 				PRODUCT_NAME = joinme;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -422,7 +418,6 @@
 		25791D82185ADB9F00A10918 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/joinme.app/joinme";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -430,12 +425,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/TodoList-Prefix.pch";
+				GCC_PREFIX_HEADER = "joinme/joinme-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TodoListTests/joinmeTests-Info.plist";
+				INFOPLIST_FILE = "joinmeTests/joinmeTests-Info.plist";
 				PRODUCT_NAME = joinmeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -445,7 +440,6 @@
 		25791D83185ADB9F00A10918 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/joinme.app/joinme";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -453,8 +447,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/TodoList-Prefix.pch";
-				INFOPLIST_FILE = "TodoListTests/joinmeTests-Info.plist";
+				GCC_PREFIX_HEADER = "joinme/joinme-Prefix.pch";
+				INFOPLIST_FILE = "joinmeTests/joinmeTests-Info.plist";
 				PRODUCT_NAME = joinmeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

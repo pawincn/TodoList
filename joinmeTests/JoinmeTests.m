@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface TodoListTests : XCTestCase
+@interface JoinmeTests : XCTestCase
 
 @end
 
-@implementation TodoListTests
+@implementation JoinmeTests
 
 - (void)setUp
 {
