@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "25791D51185ADB9F00A10918"
-               BuildableName = "TodoList.app"
-               BlueprintName = "TodoList"
-               ReferencedContainer = "container:TodoList.xcodeproj">
+               BuildableName = "joinme.app"
+               BlueprintName = "joinme"
+               ReferencedContainer = "container:joinme.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25791D6C185ADB9F00A10918"
-               BuildableName = "TodoListTests.xctest"
-               BlueprintName = "TodoListTests"
-               ReferencedContainer = "container:TodoList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25791D51185ADB9F00A10918"
-            BuildableName = "TodoList.app"
-            BlueprintName = "TodoList"
-            ReferencedContainer = "container:TodoList.xcodeproj">
+            BuildableName = "joinme.app"
+            BlueprintName = "joinme"
+            ReferencedContainer = "container:joinme.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25791D51185ADB9F00A10918"
-            BuildableName = "TodoList.app"
-            BlueprintName = "TodoList"
-            ReferencedContainer = "container:TodoList.xcodeproj">
+            BuildableName = "joinme.app"
+            BlueprintName = "joinme"
+            ReferencedContainer = "container:joinme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25791D51185ADB9F00A10918"
-            BuildableName = "TodoList.app"
-            BlueprintName = "TodoList"
-            ReferencedContainer = "container:TodoList.xcodeproj">
+            BuildableName = "joinme.app"
+            BlueprintName = "joinme"
+            ReferencedContainer = "container:joinme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

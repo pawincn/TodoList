@@ -40,20 +40,20 @@
 /* Begin PBXFileReference section */
 		256FE5141869347700631069 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		256FE55918697A7D00631069 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		25791D52185ADB9F00A10918 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25791D52185ADB9F00A10918 /* joinme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joinme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25791D55185ADB9F00A10918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		25791D57185ADB9F00A10918 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		25791D59185ADB9F00A10918 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		25791D5D185ADB9F00A10918 /* TodoList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoList-Info.plist"; sourceTree = "<group>"; };
+		25791D5D185ADB9F00A10918 /* joinme-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "joinme-Info.plist"; sourceTree = "<group>"; };
 		25791D5F185ADB9F00A10918 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25791D61185ADB9F00A10918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		25791D63185ADB9F00A10918 /* TodoList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoList-Prefix.pch"; sourceTree = "<group>"; };
+		25791D63185ADB9F00A10918 /* joinme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "joinme-Prefix.pch"; sourceTree = "<group>"; };
 		25791D64185ADB9F00A10918 /* BWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWAppDelegate.h; sourceTree = "<group>"; };
 		25791D65185ADB9F00A10918 /* BWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWAppDelegate.m; sourceTree = "<group>"; };
 		25791D67185ADB9F00A10918 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		25791D6D185ADB9F00A10918 /* TodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25791D6D185ADB9F00A10918 /* joinmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = joinmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25791D6E185ADB9F00A10918 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		25791D76185ADB9F00A10918 /* TodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoListTests-Info.plist"; sourceTree = "<group>"; };
+		25791D76185ADB9F00A10918 /* joinmeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "joinmeTests-Info.plist"; sourceTree = "<group>"; };
 		25791D78185ADB9F00A10918 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25791D7A185ADB9F00A10918 /* TodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListTests.m; sourceTree = "<group>"; };
 		25791D84185ADBAD00A10918 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		25791D49185ADB9F00A10918 = {
 			isa = PBXGroup;
 			children = (
-				25791D5B185ADB9F00A10918 /* TodoList */,
-				25791D74185ADB9F00A10918 /* TodoListTests */,
+				25791D5B185ADB9F00A10918 /* joinme */,
+				25791D74185ADB9F00A10918 /* joinmeTests */,
 				25791D54185ADB9F00A10918 /* Frameworks */,
 				25791D53185ADB9F00A10918 /* Products */,
 			);
@@ -105,8 +105,8 @@
 		25791D53185ADB9F00A10918 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25791D52185ADB9F00A10918 /* TodoList.app */,
-				25791D6D185ADB9F00A10918 /* TodoListTests.xctest */,
+				25791D52185ADB9F00A10918 /* joinme.app */,
+				25791D6D185ADB9F00A10918 /* joinmeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		25791D5B185ADB9F00A10918 /* TodoList */ = {
+		25791D5B185ADB9F00A10918 /* joinme */ = {
 			isa = PBXGroup;
 			children = (
 				25791D64185ADB9F00A10918 /* BWAppDelegate.h */,
@@ -141,33 +141,35 @@
 				25791D67185ADB9F00A10918 /* Images.xcassets */,
 				25791D5C185ADB9F00A10918 /* Supporting Files */,
 			);
+			name = joinme;
 			path = TodoList;
 			sourceTree = "<group>";
 		};
 		25791D5C185ADB9F00A10918 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				25791D5D185ADB9F00A10918 /* TodoList-Info.plist */,
+				25791D5D185ADB9F00A10918 /* joinme-Info.plist */,
 				25791D5E185ADB9F00A10918 /* InfoPlist.strings */,
 				25791D61185ADB9F00A10918 /* main.m */,
-				25791D63185ADB9F00A10918 /* TodoList-Prefix.pch */,
+				25791D63185ADB9F00A10918 /* joinme-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		25791D74185ADB9F00A10918 /* TodoListTests */ = {
+		25791D74185ADB9F00A10918 /* joinmeTests */ = {
 			isa = PBXGroup;
 			children = (
 				25791D7A185ADB9F00A10918 /* TodoListTests.m */,
 				25791D75185ADB9F00A10918 /* Supporting Files */,
 			);
+			name = joinmeTests;
 			path = TodoListTests;
 			sourceTree = "<group>";
 		};
 		25791D75185ADB9F00A10918 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				25791D76185ADB9F00A10918 /* TodoListTests-Info.plist */,
+				25791D76185ADB9F00A10918 /* joinmeTests-Info.plist */,
 				25791D77185ADB9F00A10918 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -176,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25791D51185ADB9F00A10918 /* TodoList */ = {
+		25791D51185ADB9F00A10918 /* joinme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25791D7E185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "TodoList" */;
+			buildConfigurationList = 25791D7E185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "joinme" */;
 			buildPhases = (
 				25791D4E185ADB9F00A10918 /* Sources */,
 				25791D4F185ADB9F00A10918 /* Frameworks */,
@@ -188,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = TodoList;
+			name = joinme;
 			productName = TodoList;
-			productReference = 25791D52185ADB9F00A10918 /* TodoList.app */;
+			productReference = 25791D52185ADB9F00A10918 /* joinme.app */;
 			productType = "com.apple.product-type.application";
 		};
-		25791D6C185ADB9F00A10918 /* TodoListTests */ = {
+		25791D6C185ADB9F00A10918 /* joinmeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25791D81185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "TodoListTests" */;
+			buildConfigurationList = 25791D81185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "joinmeTests" */;
 			buildPhases = (
 				25791D69185ADB9F00A10918 /* Sources */,
 				25791D6A185ADB9F00A10918 /* Frameworks */,
@@ -206,9 +208,9 @@
 			dependencies = (
 				25791D73185ADB9F00A10918 /* PBXTargetDependency */,
 			);
-			name = TodoListTests;
+			name = joinmeTests;
 			productName = TodoListTests;
-			productReference = 25791D6D185ADB9F00A10918 /* TodoListTests.xctest */;
+			productReference = 25791D6D185ADB9F00A10918 /* joinmeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 25791D4D185ADB9F00A10918 /* Build configuration list for PBXProject "TodoList" */;
+			buildConfigurationList = 25791D4D185ADB9F00A10918 /* Build configuration list for PBXProject "joinme" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25791D51185ADB9F00A10918 /* TodoList */,
-				25791D6C185ADB9F00A10918 /* TodoListTests */,
+				25791D51185ADB9F00A10918 /* joinme */,
+				25791D6C185ADB9F00A10918 /* joinmeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		25791D73185ADB9F00A10918 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25791D51185ADB9F00A10918 /* TodoList */;
+			target = 25791D51185ADB9F00A10918 /* joinme */;
 			targetProxy = 25791D72185ADB9F00A10918 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,9 +397,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/TodoList-Prefix.pch";
-				INFOPLIST_FILE = "TodoList/TodoList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TodoList/joinme-Prefix.pch";
+				INFOPLIST_FILE = "TodoList/joinme-Info.plist";
+				PRODUCT_NAME = joinme;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,9 +411,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TodoList/TodoList-Prefix.pch";
-				INFOPLIST_FILE = "TodoList/TodoList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TodoList/joinme-Prefix.pch";
+				INFOPLIST_FILE = "TodoList/joinme-Info.plist";
+				PRODUCT_NAME = joinme;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/joinme.app/joinme";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -433,8 +435,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TodoListTests/TodoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TodoListTests/joinmeTests-Info.plist";
+				PRODUCT_NAME = joinmeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -444,7 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/joinme.app/joinme";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -452,8 +454,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TodoList/TodoList-Prefix.pch";
-				INFOPLIST_FILE = "TodoListTests/TodoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TodoListTests/joinmeTests-Info.plist";
+				PRODUCT_NAME = joinmeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -462,7 +464,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25791D4D185ADB9F00A10918 /* Build configuration list for PBXProject "TodoList" */ = {
+		25791D4D185ADB9F00A10918 /* Build configuration list for PBXProject "joinme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25791D7C185ADB9F00A10918 /* Debug */,
@@ -471,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25791D7E185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "TodoList" */ = {
+		25791D7E185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "joinme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25791D7F185ADB9F00A10918 /* Debug */,
@@ -480,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25791D81185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "TodoListTests" */ = {
+		25791D81185ADB9F00A10918 /* Build configuration list for PBXNativeTarget "joinmeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25791D82185ADB9F00A10918 /* Debug */,
