@@ -1,5 +1,5 @@
 //
-//  BWItem.h
+//  BWActivity.h
 //  joinme
 //
 //  Created by bwang on 12/13/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BWItem : NSObject
+@interface BWActivity : NSObject
 
 @property NSString *itemName;
 @property BOOL completed;

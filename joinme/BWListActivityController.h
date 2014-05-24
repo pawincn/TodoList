@@ -1,5 +1,5 @@
 //
-//  BWListViewController.h
+//  BWListActivityController.h
 //  joinme
 //
 //  Created by bwang on 12/13/13.
@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BWItem.h"
+#import "BWActivity.h"
 
-@interface BWListViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
+@interface BWListActivityController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property NSMutableArray *items;
 @property NSMutableArray *filteredItems;
-@property BWItem *itemToSave;
+@property BWActivity *itemToSave;
 
 @end

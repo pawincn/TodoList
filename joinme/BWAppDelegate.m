@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 bwang. All rights reserved.
 //
 
+#import <RestKit/RestKit.h>
+
 #import "BWAppDelegate.h"
-#import "BWListViewController.h"
+#import "BWListActivityController.h"
 #import "BWDBManager.h"
 
 @implementation BWAppDelegate
@@ -60,17 +62,17 @@
 //    [self saveDataToDatabase:array];
 }
 
-- (BWListViewController *)getControllerDataModel
+- (BWListActivityController *)getControllerDataModel
 {
     UINavigationController *rootCtr = (UINavigationController *)self.window.rootViewController;
-    return (BWListViewController *) [[rootCtr viewControllers] objectAtIndex:0];
+    return (BWListActivityController *) [[rootCtr viewControllers] objectAtIndex:0];
 }
 
 - (void)saveDataToDatabase:(NSMutableArray *) array
 {
     for (int i = 0; i < [array count]; i++)
     {
-        BWItem * item = (BWItem *)array[i];
+        BWActivity * item = (BWActivity *)array[i];
         [[BWDBManager getSharedInstance] create:[item itemName]];
     }
 }

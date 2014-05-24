@@ -7,7 +7,7 @@
         <!--List View Controller - View something-->
         <scene sceneID="g8K-1t-hoy">
             <objects>
-                <tableViewController title="View something" id="9Xd-38-dvc" customClass="BWListViewController" sceneMemberID="viewController">
+                <tableViewController title="View something" id="9Xd-38-dvc" customClass="BWListActivityController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hUs-2Q-Cm4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Add View Controller - Save activity-->
         <scene sceneID="Jeb-I2-UQj">
             <objects>
-                <viewController id="fOE-on-drC" customClass="BWAddViewController" sceneMemberID="viewController">
+                <viewController id="fOE-on-drC" customClass="BWAddActivityController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="duN-yU-v9x"/>
                         <viewControllerLayoutGuide type="bottom" id="FNa-cp-Khl"/>

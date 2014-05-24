@@ -7,7 +7,7 @@
 //
 
 #import "BWDBManager.h"
-#import "BWItem.h"
+#import "BWActivity.h"
 
 static BWDBManager *sharedInstance = nil;
 static sqlite3 *database = nil;
@@ -119,7 +119,7 @@ static sqlite3_stmt *statement = nil;
             {
                 int regno = sqlite3_column_int(statement, 0);
                 NSString *name = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
-                BWItem *item = [[BWItem alloc] init];
+                BWActivity *item = [[BWActivity alloc] init];
                 [item setItemName:name];
                 [item setIndex:regno];
                 [resultArray addObject:item];

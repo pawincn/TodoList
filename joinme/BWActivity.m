@@ -1,20 +1,20 @@
 //
-//  BWItem.m
+//  BWActivity.m
 //  joinme
 //
 //  Created by bwang on 12/13/13.
 //  Copyright (c) 2013 bwang. All rights reserved.
 //
 
-#import "BWItem.h"
+#import "BWActivity.h"
 
-@interface BWItem ()
+@interface BWActivity ()
 
 @property NSDate *completeDate;
 
 @end
 
-@implementation BWItem
+@implementation BWActivity
 
 - (void)markAsCompleted: (BOOL)isCompleted
 {

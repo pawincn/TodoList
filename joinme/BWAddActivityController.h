@@ -1,5 +1,5 @@
 //
-//  BWAddViewController.h
+//  BWAddActivityController.h
 //  joinme
 //
 //  Created by bwang on 12/13/13.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BWItem.h"
+#import "BWActivity.h"
 
-@interface BWAddViewController : UIViewController
+@interface BWAddActivityController : UIViewController
 
-@property BWItem *item;
+@property BWActivity *item;
 
 @end

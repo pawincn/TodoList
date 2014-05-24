@@ -1,28 +1,28 @@
 //
-//  BWListViewController.m
+//  BWListActivityController.m
 //  joinme
 //
 //  Created by bwang on 12/13/13.
 //  Copyright (c) 2013 bwang. All rights reserved.
 //
 
-#import "BWListViewController.h"
-#import "BWAddViewController.h"
+#import "BWListActivityController.h"
+#import "BWAddActivityController.h"
 #import "BWDBManager.h"
 
-@interface BWListViewController ()
+@interface BWListActivityController ()
 
-@property BWItem *tappedItem;
+@property BWActivity *tappedItem;
 
 @end
 
-@implementation BWListViewController
+@implementation BWListActivityController
 
 - (IBAction)backToList:(UIStoryboardSegue *)segue
 {
-//    BWAddViewController *source = [segue sourceViewController];
-//    BWItem *item = source.item;
-    BWItem *item = self.itemToSave;
+//    BWAddActivityController *source = [segue sourceViewController];
+//    BWActivity *item = source.item;
+    BWActivity *item = self.itemToSave;
     if (item == nil) return;
     if (!item.isToUpdate)
     {
@@ -131,7 +131,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    BWAddViewController *destination = (BWAddViewController*)segue.destinationViewController;
+    BWAddActivityController *destination = (BWAddActivityController *)segue.destinationViewController;
     destination.item = self.tappedItem;
     self.tappedItem = nil; // this clearing is necessary, otherwise the Add button won't work.
 }
@@ -140,7 +140,7 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-        BWItem *itemToRemove = self.items[indexPath.row];
+        BWActivity *itemToRemove = self.items[indexPath.row];
         [[BWDBManager getSharedInstance] remove:itemToRemove.index];
         [self.items removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
